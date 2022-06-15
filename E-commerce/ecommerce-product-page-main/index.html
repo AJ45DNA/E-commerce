@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- <meta http-equiv="Refresh" content="5; URL= index.html"> -->
+
+</head>
+<body>
+
+  <!-- <main data-barba="container" data-barba-namespace="main-section"></main> -->
+
+  <!-- GESTION DE LATRANSITION -->
+
+  <div class="transition">
+  </div>
+
+  <!-- PRINCIPALE -->
+
+  <div id="navigation">
+
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+
+    <div class="onglets">
+      <a href="#" data-text="Collections">Collections</a>
+      <a href="#" data-text="Men">Men</a>
+      <a href="#" data-text="Women">Women</a>
+      <a href="#" data-text="About">About</a>
+      <a href="#" data-text="Contact">Contact</a>
+    </div>
+
+    <div class="decalage">
+
+    </div>
+
+    <div class="svg-logos">
+      <div class="cart-img">
+        <img src="images/icon-cart 2.svg" alt="cart">
+        <div class="indicator">
+          <p></p>
+        </div>
+      </div>
+      <img src="images/image-avatar.png" alt="">
+    </div>
+
+    <span></span>
+
+  </div>
+
+  <div class="cart-details ">
+    <div class="cart">
+      <p>Cart</p>
+      <span></span>
+    </div>
+    <div class="article-details">
+      <div class="all-details">
+        <div class="article-image">
+          <img src="images/image-product-1-thumbnail.jpg" alt="article image">
+        </div>
+        <div class="article-description">
+          <p class="article-name">Fall Limited Edition Sneakers</p>
+          <div class="total-price">
+            <p class="multiplication"></p> &ensp;
+            <p class="total"></p>
+          </div>
+        </div>
+        <div class="delete">
+          <img src="images/icon-delete.svg" alt="trash">
+        </div>
+      </div>
+      <p class="empty">Your cart is empty.</p>
+
+      <div class="checkout-box">
+        <div class="checkout">
+          <p>Checkout</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-container">
+
+    <div id="left-container">
+
+      <div class="main-pictures">
+        
+        <div class="slide-images-box">
+          <img src="images/image-product-1.jpg" class="product-img1" alt="product1">
+          <img src="images/image-product-2.jpg" class="product-img2" alt="product2">
+          <img src="images/image-product-3.jpg" class="product-img3" alt="product3">
+          <img src="images/image-product-4.jpg" class="product-img4" alt="product4">
+        </div>
+
+      </div>
+  
+      <div class="little-pictures">
+
+        <div class="first-little-image manual-btn1">
+          <img src="images/image-product-1-thumbnail.jpg" class="basic-checked " alt="picture1">
+        </div>
+        <div class="second-little-image manual-btn2">
+          <img src="images/image-product-2-thumbnail.jpg" alt="picture2">
+        </div>
+        <div class="third-little-image manual-btn3">
+          <img src="images/image-product-3-thumbnail.jpg" alt="picture3">
+        </div>
+        <div class="quart-little-image manual-btn4">
+          <img src="images/image-product-4-thumbnail.jpg" alt="picture4">
+        </div>
+
+      </div>
+  
+    </div>
+  
+    <div id="right-container">
+  
+      <p class="company-title">SNEAKER COMPANY</p>
+  
+      <div class="bold-text">
+        <h1>Fall Limited Edition Sneakers</h1>
+      </div>
+
+      <div class="description-box">
+        <p class="description-text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+      </div>
+  
+      <div class="price">
+        <div class="sold">
+          <h1>$125.00</h1>
+          <div class="reduction">
+            <p>50%</p>
+          </div>
+        </div>
+  
+        <p>$250.00</p>
+      </div>
+  
+      <div class="adding">
+        <div class="add">
+          <div class="minus">
+            <img src="images/icon-minus.svg" class="minus" alt="minus">
+          </div>
+          <p></p>
+          <div class="plus">
+            <img src="images/icon-plus.svg" class="plus" alt="plus">
+          </div>
+        </div>
+  
+        <button class="add-to">
+          <img src="images/icon-cart.svg" class="cart-img" alt="cart">
+          <p class="add-to-cart">Add to cart</p>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- GESTION DU CHECKOUT -->
+
+  <div class="buying-validation">
+    
+    <div class="validation-space">
+      <div class="text-to-validate">
+
+        <p class="first-part">Are you sure you want to buy <span class="number-of-pairs"></span> pairs of <span class="limited-edition">Fall Limited Edition Sneakers</span></p> <p class="second-part">for an amount of <span class="price-to-validate"></span> ?</p>
+
+      </div>
+
+      <div class="validation-buttons">
+
+        <div class="no">
+          <p>NO</p>
+        </div>
+
+        <div class="validate">
+            <p>YES</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- GESTION DE LA FIN DE LA TRANSACTION -->
+
+  <div class="transaction-space">
+    <div class="transaction-message">
+      <p>Votre compte a été débité de <span class="montant-débité"></span></p>
+    </div>
+
+    <div class="end-transaction-btn">
+      <div class="end-btn">
+        <p>Terminé</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- GESTION DE LA SCROLLBAR -->
+
+  <div class="scrollbar"></div>
+
+
+  <!-- GESTION DU FOCUS SUR IMAGE -->
+
+
+  <div class="main-focus-div">
+
+    <div class="not-hidden">
+
+      <div class="back">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="swipe-left">
+        <img src="images/icon-previous 2.svg" class="previous-orange" alt="swipe-left2">
+        <img src="images/icon-previous.svg" alt="swipe-left">
+      </div>
+
+      <div class="main-pictures2">
+          
+        <div class="slide-images-box">
+          <img src="images/image-product-1.jpg" class="product-img1" alt="product1">
+          <img src="images/image-product-2.jpg" class="product-img2" alt="product2">
+          <img src="images/image-product-3.jpg" class="product-img3" alt="product3">
+          <img src="images/image-product-4.jpg" class="product-img4" alt="product4">
+        </div>
+  
+      </div>
+
+      <div class="swipe-right">
+        <img src="images/icon-next 2.svg" class="next-orange" alt="swipe-right2">
+        <img src="images/icon-next.svg" alt="swipe-right">
+      </div>
+
+    </div>
+
+    <div class="little-pictures">
+
+      <div class="first-little-image manual-btn12 ">
+        <img src="images/image-product-1-thumbnail.jpg" class="basic-checked" alt="picture1">
+      </div>
+      <div class="second-little-image manual-btn22">
+        <img src="images/image-product-2-thumbnail.jpg" alt="picture2">
+      </div>
+      <div class="third-little-image manual-btn32">
+        <img src="images/image-product-3-thumbnail.jpg" alt="picture3">
+      </div>
+      <div class="quart-little-image manual-btn42">
+        <img src="images/image-product-4-thumbnail.jpg" alt="picture4">
+      </div>
+
+  </div>
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> -->
+</body>
+</html>
